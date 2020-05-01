@@ -10,15 +10,14 @@ public class XORRunner {
         return Math.round(vector[0]);
     }// getRoundedValue
 
-    public static void main(String[] args) throws Exception {
-
+    public XORRunner() throws Exception {
         // Training Set
         double[][] data = {{0, 0},{1, 0},{0, 1},{1, 1}};// inputs
         double[][] expected = {{0},{1},{1},{0}};// outputs
 
         // Create and instance of the NeuralNetwork with 2 input nodes, 2 hidden nodes, and 1 output node
         // and a sigmoidal activation function
-        NeuralNetwork nn = new NeuralNetwork(Activator.ActivationFunction.HyperbolicTangent, 2, 2, 1);
+        NeuralNetwork nn = new NeuralNetwork(Activator.ActivationFunction.Sigmoid, 2, 2, 1);
 
         // Instantiate back-propagation training algorithm and train the network using the training set, with a
         // learning rate of 0.01 and 1000000 epochs
@@ -38,5 +37,9 @@ public class XORRunner {
         System.out.println("01=>" + getRoundedValue(nn.process(test2)));
         System.out.println("02=>" + getRoundedValue(nn.process(test3)));
         System.out.println("03=>" + getRoundedValue(nn.process(test4)));
+    }
+
+    public static void main(String[] args) throws Exception {
+        new XORRunner();
     }// void
 }// XORRunner
