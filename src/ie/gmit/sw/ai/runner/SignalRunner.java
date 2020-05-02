@@ -25,7 +25,8 @@ public class SignalRunner {
                 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0 }, { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 } };
 
         // 2. Create a neural network with activator function and nodes in input,hidden and output layer.
-        NeuralNetwork nn = new NeuralNetwork(Activator.ActivationFunction.Sigmoid, 4, 6, 14);
+        // change the hidden layers nodes to 18, 17, 28 and 126
+        NeuralNetwork nn = new NeuralNetwork(Activator.ActivationFunction.Sigmoid, 4, 126, 14);
 
         // 3. Instantiate the back-propagation algorithm
         BackpropagationTrainer trainer = new BackpropagationTrainer(nn);
@@ -33,7 +34,7 @@ public class SignalRunner {
         trainer.train(data, expected, 0.2, 500);
 
         // 4. Create and feed in the test data
-        double[] test = {1,1,0,1};
+        double[] test = {1,1,0,0};
         double[] result = nn.process(test);
         System.out.println(Utils.getMaxIndex(result) + 1);
     }// SignalRunner
