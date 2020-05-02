@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1379a0b-6c35-4e3b-b7c2-89ce84738553" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/runner/SignalRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/runner/SignalRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/runner/SignalRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ie/gmit/sw/ai/runner/XORRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ie/gmit/sw/ai/runner/XORRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +42,20 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SignalRunner">
+    <configuration name="SignalRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ie.gmit.sw.ai.runner.SignalRunner" />
+      <module name="3-Layer-Backpropagation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ie.gmit.sw.ai.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="XORRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ie.gmit.sw.ai.runner.XORRunner" />
       <module name="3-Layer-Backpropagation" />
@@ -58,6 +71,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SignalRunner" />
         <item itemvalue="Application.XORRunner" />
       </list>
     </recent_temporary>
@@ -74,7 +88,7 @@
       <updated>1588360963606</updated>
       <workItem from="1588360965789" duration="71000" />
       <workItem from="1588361140794" duration="10756000" />
-      <workItem from="1588441920390" duration="2257000" />
+      <workItem from="1588441920390" duration="3344000" />
     </task>
     <servers />
   </component>
@@ -106,5 +120,9 @@
       <screen x="49" y="28" width="1317" height="740" />
     </state>
     <state x="362" y="225" key="com.intellij.ide.util.TipDialog/49.28.1317.740@49.28.1317.740" timestamp="1588441919070" />
+    <state x="370" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1588444771349">
+      <screen x="49" y="28" width="1317" height="740" />
+    </state>
+    <state x="370" y="89" width="672" height="678" key="search.everywhere.popup/49.28.1317.740@49.28.1317.740" timestamp="1588444771349" />
   </component>
 </project>

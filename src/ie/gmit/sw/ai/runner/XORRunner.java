@@ -33,7 +33,7 @@ public class XORRunner {
         double[] test3 = {0.0, 1.0};// true - 1
         double[] test4 = {1.0, 1.0};// false - 0
 
-        // 4. Execute each test and round the results using the static function defined above
+        // Execute each test and round the results using the static function defined above
         System.out.println("00=>" + getRoundedValue(nn.process(test1)));
         System.out.println("01=>" + getRoundedValue(nn.process(test2)));
         System.out.println("10=>" + getRoundedValue(nn.process(test3)));
