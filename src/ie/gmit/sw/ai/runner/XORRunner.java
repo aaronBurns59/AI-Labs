@@ -28,10 +28,10 @@ public class XORRunner {
 
         // 4. Create 4 data sets that will be used to test the Neural Network after it is fully trained
         // the data sets relate to the truth table permutations for the two operands of the XOR operator
-        double[] test1 = {0.0, 0.0};// false
-        double[] test2 = {1.0, 0.0};// true
-        double[] test3 = {0.0, 1.0};// true
-        double[] test4 = {1.0, 1.0};// false
+        double[] test1 = {0.0, 0.0};// false - 0
+        double[] test2 = {1.0, 0.0};// true - 1
+        double[] test3 = {0.0, 1.0};// true - 1
+        double[] test4 = {1.0, 1.0};// false - 0
 
         // 4. Execute each test and round the results using the static function defined above
         System.out.println("00=>" + getRoundedValue(nn.process(test1)));
